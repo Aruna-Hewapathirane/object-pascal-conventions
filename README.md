@@ -1,7 +1,7 @@
-# Object Pascal Conventions
+### Object Pascal Conventions
 
-# 1. Naming Conventions
-## **Variables & Constants**
+## 1. Naming Conventions
+# **Variables & Constants**
 
 Use **camel case** for variables:
 
@@ -17,7 +17,7 @@ const
   MAX_USERS = 1000;
   DEFAULT_PATH = '/home/user/';
 ```
-**Types**
+# **Types**
 
 Prefix custom types with T:
 ```pascal 
@@ -27,7 +27,7 @@ type
     Age: Integer;  
 end;
 ```
-**Classes & Objects**
+# **Classes & Objects**
 
 Class names should start with T:
 ```pascal 
@@ -54,7 +54,7 @@ Parameters should start with A:
 procedure SetName(const AName: string);
 ```
 
-**Global Variables**
+# **Global Variables**
 
 Prefix with G to indicate global scope:
 ```pascal 
@@ -62,7 +62,7 @@ var
   GAppTitle: string;
 ```
 
-# 2. Formatting & Indentation
+## 2. Formatting & Indentation
 
 Use **2 or 4 spaces** per indentation (avoid tabs).
 
