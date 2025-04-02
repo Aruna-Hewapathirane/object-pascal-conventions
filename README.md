@@ -1,9 +1,9 @@
-# object-pascal-conventions
+# Object Pascal Conventions
 
 # 1. Naming Conventions
-Variables & Constants
+**Variables & Constants**
 
-    Use camel case for variables:
+    Use **camel case** for variables:
 
 var  
   userName: string;
