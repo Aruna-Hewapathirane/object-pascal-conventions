@@ -102,13 +102,13 @@ end;
 // This is a single-line comment
 ```
 **Describe complex logic:**
-
+```pascal 
 // Check if the file exists before reading
 if FileExists(FileName) then  
   begin  
     LoadFile(FileName);  
   end;
-
+```
 # 4. Code Structure
 
 **Procedure & function declarations should be at the top of the interface section:**
