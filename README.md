@@ -83,7 +83,7 @@ begin
   WriteLn('Between 10 and 20');  
 end;
 
-Single-line if allowed but discouraged:
+Single-line if allowed but discouraged: 
 
     if X = 0 then Exit;
 
