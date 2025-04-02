@@ -96,23 +96,23 @@ end;
 ```pascal 
 { This is a block comment }  
 (* Another block comment *)
-
+```
 **Use** // **for single-line comments:**
-
+```pascal 
 // This is a single-line comment
 ```
 **Describe complex logic:**
 
-    // Check if the file exists before reading
-    if FileExists(FileName) then  
-    begin  
-      LoadFile(FileName);  
-    end;
+// Check if the file exists before reading
+if FileExists(FileName) then  
+  begin  
+    LoadFile(FileName);  
+  end;
 
 # 4. Code Structure
 
 **Procedure & function declarations should be at the top of the interface section:**
-
+```pascal 
 type  
   TPerson = class  
     private  
@@ -121,29 +121,29 @@ type
       function GetName: string;  
       procedure SetName(const AValue: string);  
   end;
-
+```
 **Implementation goes into the implementation section:**
-
+```pascal 
 implementation  
 
 function TPerson.GetName: string;  
   begin  
     Result := FName;  
   end;
-
+```
 # 5. Error Handling
 
 **Use** try..except **for exceptions:**
-
+```pascal 
 try  
   SomeRiskyOperation;  
 except  
   on E: Exception do  
     WriteLn('Error: ', E.Message);
 end;
-
+```
 **Use** try..finally **for cleanup:**
-
+```pascal 
 var  
 FileHandle: TFileStream;  
 begin  
@@ -154,21 +154,21 @@ begin
       FileHandle.Free;  
     end;  
 end;
-
+```
 # 6. Units & Uses Clause
 
 **Group standard and third-party libraries separately:**
-
+```pascal 
 uses  
   SysUtils, Classes, StrUtils,  
   MyUnit1, MyUnit2;
-
+```
 **Avoid circular dependencies**—use forward declaration if necessary.
 
 # 7. Memory Management
 
 **Always free objects:**
-
+```pascal 
 var  
   Obj: TObject;  
 begin  
@@ -179,26 +179,26 @@ begin
       Obj.Free;  
     end;  
 end;    
-
+```
 # 8. Pascal-Specific Best Practices
 
 **Use** const **for parameters whenever possible** (avoids unnecessary copying):
-
+```pascal 
 procedure ShowMessage(const AText: string);
-
+```
 **Use** with **sparingly** (can make code harder to read):
-
+```pascal 
 with SomeObject do  
 begin  
   Name := 'John';  
   Age := 30;  
 end;
-
+```
 **Use** Enumerated types **instead of magic numbers:**
-
+```pascal 
 type  
   TColor = (clRed, clGreen, clBlue);
-
+```
 **Conclusion**
 These conventions make Object Pascal code cleaner, more readable, and maintainable. Do you follow any specific conventions in your Lazarus projects, or do you want me to suggest something tailored to your style?
 
