@@ -19,13 +19,13 @@ const
 ```
 **Types**
 
-    Prefix custom types with T:
+Prefix custom types with T:
 ```pascal 
-    type  
-      TUser = record  
-        Name: string;  
-        Age: Integer;  
-      end;
+type  
+  TUser = record  
+    Name: string;  
+    Age: Integer;  
+end;
 ```
 **Classes & Objects**
 
