@@ -8,7 +8,8 @@ Use **camel case** for variables:
 ```pascal 
 var  
   userName: string;
-  countItems: Integer;```
+  countItems: Integer;
+```
 
 Use **all caps** for constants:
 
