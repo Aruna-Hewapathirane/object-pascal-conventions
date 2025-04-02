@@ -29,7 +29,7 @@ end;
 ```
 **Classes & Objects**
 
-    Class names should start with T:
+Class names should start with T:
 ```pascal 
 type  
   TPerson = class  
