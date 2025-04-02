@@ -13,9 +13,9 @@ var
 
 Use **all caps** for constants:
 ```pascal 
-    const  
-      MAX_USERS = 1000;
-      DEFAULT_PATH = '/home/user/';
+const  
+  MAX_USERS = 1000;
+  DEFAULT_PATH = '/home/user/';
 ```
 **Types**
 
