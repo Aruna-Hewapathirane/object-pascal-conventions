@@ -12,25 +12,25 @@ var
 ```
 
 Use **all caps** for constants:
-
+```pascal 
     const  
       MAX_USERS = 1000;
       DEFAULT_PATH = '/home/user/';
-
+```
 **Types**
 
     Prefix custom types with T:
-
+```pascal 
     type  
       TUser = record  
         Name: string;  
         Age: Integer;  
       end;
-
+```
 **Classes & Objects**
 
     Class names should start with T:
-
+```pascal 
 type  
   TPerson = class  
     private  
@@ -38,27 +38,29 @@ type
     public  
       property Age: Integer read FAge write FAge;  
   end;
-
+```
 Fields should start with F:
-
+```pascal 
 private  
   FName: string;
-
+```
 Methods & properties should use **PascalCase:**
-
+```pascal 
 function GetName: string;
 procedure SetName(const AValue: string);
-
+```
 Parameters should start with A:
-
-    procedure SetName(const AName: string);
+```pascal 
+procedure SetName(const AName: string);
+```
 
 **Global Variables**
 
-    Prefix with G to indicate global scope:
-
-    var  
-      GAppTitle: string;
+Prefix with G to indicate global scope:
+```pascal 
+var  
+  GAppTitle: string;
+```
 
 # 2. Formatting & Indentation
 
