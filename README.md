@@ -5,6 +5,7 @@
 
 Use **camel case** for variables:
 
+```pascal 
 var  
   userName: string;
   countItems: Integer;
