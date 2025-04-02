@@ -1,6 +1,6 @@
 # object-pascal-conventions
 
-#1. Naming Conventions
+# 1. Naming Conventions
 Variables & Constants
 
     Use camel case for variables:
@@ -58,7 +58,7 @@ Global Variables
     var  
       GAppTitle: string;
 
-#2. Formatting & Indentation
+# 2. Formatting & Indentation
 
     Use 2 or 4 spaces per indentation (avoid tabs).
 
@@ -87,7 +87,7 @@ Single-line if allowed but discouraged:
 
     if X = 0 then Exit;
 
-#3. Commenting
+# 3. Commenting
 
     Use {} or (* *) for block comments:
 
@@ -106,7 +106,7 @@ Describe complex logic:
       LoadFile(FileName);  
     end;
 
-#4. Code Structure
+# 4. Code Structure
 
     Procedure & function declarations should be at the top of the interface section:
 
@@ -128,7 +128,7 @@ Implementation goes into the implementation section:
       Result := FName;  
     end;
 
-#5. Error Handling
+# 5. Error Handling
 
     Use try..except for exceptions:
 
@@ -152,7 +152,7 @@ Use try..finally for cleanup:
       end;  
     end;
 
-#6. Units & Uses Clause
+# 6. Units & Uses Clause
 
     Group standard and third-party libraries separately:
 
@@ -162,7 +162,7 @@ Use try..finally for cleanup:
 
     Avoid circular dependencies—use forward declaration if necessary.
 
-#7. Memory Management
+# 7. Memory Management
 
     Always free objects:
 
@@ -177,7 +177,7 @@ Use try..finally for cleanup:
       end;  
     end;
 
-#8. Pascal-Specific Best Practices
+# 8. Pascal-Specific Best Practices
 
     Use const for parameters whenever possible (avoids unnecessary copying):
 
