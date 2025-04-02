@@ -1,6 +1,7 @@
-### Object Pascal Conventions
+# Object Pascal Conventions
 
-## 1. Naming Conventions
+# 1. Naming Conventions
+
 # **Variables & Constants**
 
 Use **camel case** for variables:
