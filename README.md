@@ -1,8 +1,6 @@
-# Object Pascal Conventions
-
 # 1. Naming Conventions
 
-# **Variables & Constants**
+## **Variables & Constants**
 
 Use **camel case** for variables:
 
@@ -18,7 +16,7 @@ const
   MAX_USERS = 1000;
   DEFAULT_PATH = '/home/user/';
 ```
-# **Types**
+## **Types**
 
 Prefix custom types with T:
 ```pascal 
@@ -28,7 +26,7 @@ type
     Age: Integer;  
 end;
 ```
-# **Classes & Objects**
+## **Classes & Objects**
 
 Class names should start with T:
 ```pascal 
@@ -55,7 +53,7 @@ Parameters should start with A:
 procedure SetName(const AName: string);
 ```
 
-# **Global Variables**
+## **Global Variables**
 
 Prefix with G to indicate global scope:
 ```pascal 
@@ -63,46 +61,46 @@ var
   GAppTitle: string;
 ```
 
-## 2. Formatting & Indentation
+# 2. Formatting & Indentation
 
 Use **2 or 4 spaces** per indentation (avoid tabs).
 
 **Begin-End blocks should be indented:**
-
+```pascal 
 if X > 0 then  
 begin  
   WriteLn('Positive');
 end;
-
+```
 **Place begin and end on separate lines:**
-
+```pascal 
 procedure DoSomething;  
 begin  
   WriteLn('Hello, World!');  
 end;
-
+```
 **Keep if statements readable:**
-
+```pascal 
 if (Value > 10) and (Value < 20) then  
 begin  
   WriteLn('Between 10 and 20');  
 end;
-
+```
 **Single-line if allowed but discouraged:**
-
+```pascal 
     if X = 0 then Exit;
-
+```
 # 3. Commenting
 
 **Use** {} **or** (* *) **for block comments:**
-
+```pascal 
 { This is a block comment }  
 (* Another block comment *)
 
 **Use** // **for single-line comments:**
 
 // This is a single-line comment
-
+```
 **Describe complex logic:**
 
     // Check if the file exists before reading
